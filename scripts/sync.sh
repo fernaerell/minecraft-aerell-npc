@@ -1,4 +1,4 @@
-NAME="aerell-partner"
+NAME="aerell-npc"
 
 BP_DIR_PATH="addon/behavior"
 RP_DIR_PATH="addon/resource"
