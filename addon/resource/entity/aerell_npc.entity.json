@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "man:npc",
+      "identifier": "aerell:npc",
       "materials": {
         "default": "entity_alphatest",
         "cape": "entity_alphatest",

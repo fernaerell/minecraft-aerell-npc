@@ -2,7 +2,7 @@
     "format_version": "1.21.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "man:npc",
+            "identifier": "aerell:npc",
             "spawn_category": "creature",
             "is_spawnable": true,
             "is_summonable": true
@@ -116,7 +116,7 @@
             },
             "minecraft:nameable": {
                 "always_show": true,
-                "allow_name_tag_renaming": false
+                "allow_name_tag_renaming": true
             },
             "minecraft:physics": {
                 "push_towards_closest_space": true

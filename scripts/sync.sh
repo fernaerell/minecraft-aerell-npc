@@ -8,6 +8,21 @@ DEV_RP_DIR_PATH="C:/Users/$(whoami)/AppData/Roaming/Minecraft Bedrock/Users/Shar
 BP_DIR_PATH_DEST="$DEV_BP_DIR_PATH/$NAME"
 RP_DIR_PATH_DEST="$DEV_RP_DIR_PATH/$NAME"
 
+SCRIPT_DIR_PATH="addon/scripts"
+SCRIPT_DIR_PATH_DEST="$BP_DIR_PATH/scripts"
+
+cd $SCRIPT_DIR_PATH
+
+bun build main.ts \
+  --outfile ../behavior/scripts/main.js \
+  --bundle \
+  --target node \
+  --minify \
+  --external @minecraft/server \
+  --external @minecraft/server-ui
+
+cd ../../
+
 if [[ ! -d "$DEV_BP_DIR_PATH" || ! -d "$DEV_RP_DIR_PATH" ]]; then
     echo "Development behavior or resource pack folder not exist."
 fi

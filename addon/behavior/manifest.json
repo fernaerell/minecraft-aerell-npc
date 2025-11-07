@@ -10,32 +10,35 @@
         "name": "pack.name",
         "pack_scope": "world",
         "uuid": "1fbf9791-e1ec-4516-b543-b6bd661cd668",
-        "version": [
-            1,
-            0,
-            0
-        ]
+        "version": "1.0.0"
     },
     "modules": [
         {
             "description": "pack.description",
             "type": "data",
             "uuid": "9a25224b-71a5-4121-93e6-6de8a849b4f0",
-            "version": [
-                1,
-                0,
-                0
-            ]
+            "version": "1.0.0"
+        },
+        {
+            "uuid": "dfb37341-d087-4dea-9a5b-7d26b00fe9b4",
+            "version": "1.0.0",
+            "type": "script",
+            "language": "javascript",
+            "entry": "scripts/main.js"
         }
     ],
     "dependencies": [
         {
             "uuid": "e1d95614-fe51-4829-8e67-e927154001aa",
-            "version": [
-                1,
-                0,
-                0
-            ]
+            "version": "1.0.0"
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.3.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
         }
     ],
     "metadata": {
